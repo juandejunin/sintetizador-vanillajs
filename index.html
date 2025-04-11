@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintetizador Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sintetizador Web</h1>
+    <div id="status">Esperando conexión MIDI...</div>
+    <div id="events"></div>
+    
+    <div class="controls">
+        <h2>Controles</h2>
+        <div id="volume-knob-container">
+            <label>Volumen</label>
+        </div>
+    </div>
+
+    <script src="midi.js"></script>
+    <script src="synth.js"></script>
+    <script src="knob.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
