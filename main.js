@@ -3,8 +3,8 @@ Midi.init();
 Midi.onMessage(({ command, note, velocity }) => {
     if (command >= 144 && command < 160 && velocity > 0) {
         Synth.play(note);
-    } else if (command >= 128 && command < 144 || velocity === 0) {
-        Synth.stop();
+    } else if (command >= 128 && command < 144 || (command >= 144 && command < 160 && velocity === 0)) {
+        Synth.stop(note); // Pasar la nota específica
     }
 });
 
